@@ -1,0 +1,153 @@
+
+
+
+.App {
+  text-align: center;
+  background: #362023;  
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header{
+  background-color: #f0b8ce;
+  border-bottom:1px solid white;
+  height: 7rem;
+  display:flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size:3rem;
+  color:rgb(53, 39, 39);
+  font-weight: bold;  
+}
+
+.logo{
+  height: 5rem;
+  width: 5rem;
+  margin-right:35px;
+  background: url("/Users/gracebarar/Documents/Winter Quarter 2021/HCDE 438/chatapp/src/Stay+at+Home+collage.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+ .message {
+  display:flex;
+  background-color:#fff;
+  padding:20px;
+  border-radius:30px;
+  min-width:40px;
+  max-width:220px;
+  min-height:40px;
+  margin:20px;
+  position:relative;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+} 
+
+/* .message{
+  color:#362023;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color:white;
+} */
+/* .text-input{
+  background-color: #f0b8ce;
+  border-top:1px solid white;
+  height: 3rem;
+} */
+/* 
+.transition, .formbutton, .formmessage label, .formmessage input[type="text"] {
+  -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+} */
+
+* {
+  font-family: Helvetica, sans-serif;
+  font-weight: light;
+  -webkit-font-smoothing: antialiased;
+}
+
+.form {
+  max-width: 1200px;
+  min-width: 400px;
+  padding: 25px;
+  background-color: none;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+} 
+.formbutton {
+  background-color: white;
+  border: 1px solid #f0b8ce;
+  line-height: 0;
+  font-size: 17px;
+  padding: 20px 15px;
+  border-radius: 60px;
+  color: #362023;
+  font-size: medium;
+  
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  z-index: 1;
+}
+.formbutton:hover, .formbutton:focus {
+  /* color: white; */
+  background-color: #f0b8ce;
+}
+.formmessage label {
+  transform-origin: left center;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  font-size: 17px;
+  padding: 10px 15px;
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  z-index: 2;
+  pointer-events: none;
+}
+.formmessage input {
+  appearance: none;
+  background-color: #f0b8ce;
+  border: 1px solid #f0b8ce;
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 60px;
+  color: #362023;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+.formmessage input:focus {
+  outline: none;
+  background:white;
+  color: #362023;
+}
+.formmessage input:focus ~ .formmessage label {
+  -moz-transform: translate(0, -35px);
+  -ms-transform: translate(0, -35px);
+  -webkit-transform: translate(0, -35px);
+  transform: translate(0, -35px);
+}
+.formmessage input:valid ~ .formmessage label {
+  text-transform: uppercase;
+  font-style: italic;
+  -moz-transform: translate(5px, -35px) scale(0.6);
+  -ms-transform: translate(5px, -35px) scale(0.6);
+  -webkit-transform: translate(5px, -35px) scale(0.6);
+  transform: translate(5px, -35px) scale(0.6);
+}
+
+::placeholder{
+  color:#362023;
+  font-size: small;
+}
